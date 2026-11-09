@@ -31,6 +31,9 @@ function cdmxDateTime(iso: string | null): string {
   const d = new Date(Date.parse(iso) - 6 * 3600_000).toISOString();
   return `${shortDate(d.slice(0, 10))} ${d.slice(11, 16)}`;
 }
+function plural(n: number, one: string, many: string): string {
+  return `${formatInt(n)} ${n === 1 ? one : many}`;
+}
 function shortDate(ymd: string): string {
   const [y, m, d] = ymd.split('-');
   return `${Number(d)} ${MONTHS[Number(m) - 1]} ${y}`;
@@ -180,23 +183,18 @@ function Content({ snap }: { snap: Snapshot }) {
                 </span>
                 <span className="stop-n num">{formatInt(s.wip_parts)}</span>
                 <span className="stop-meta">
-                  en estación · <span className="num">{formatInt(s.valid_scans)}</span> escaneos
+                  en estación · <span className="num">{plural(s.valid_scans, 'escaneo', 'escaneos')}</span>
                   {s.rejects > 0 && (
                     <>
                       {' '}
-                      · <span className="warn num">{formatInt(s.rejects)} rechazo{s.rejects === 1 ? '' : 's'}</span>
+                      · <span className="warn num">{plural(s.rejects, 'rechazo', 'rechazos')}</span>
                     </>
                   )}
                 </span>
-                <span className="stop-tasks">
-                  Tareas: <span className="num">{t.done}</span> hechas · <span className="num">{t.in_progress}</span> en
-                  curso · <span className="num">{t.pending}</span> pendientes
-                  {t.waiting_handoff > 0 && (
-                    <>
-                      {' '}
-                      · <span className="num">{t.waiting_handoff}</span> en relevo
-                    </>
-                  )}
+                <span className="stop-tasks num">
+                  Tareas: {plural(t.done, 'hecha', 'hechas')} · {formatInt(t.in_progress)} en curso ·{' '}
+                  {plural(t.pending, 'pendiente', 'pendientes')}
+                  {t.waiting_handoff > 0 ? ` · ${formatInt(t.waiting_handoff)} en relevo` : ''}
                 </span>
               </li>
             );

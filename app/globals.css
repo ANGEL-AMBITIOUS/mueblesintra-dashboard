@@ -185,6 +185,10 @@ td.num, td .num { font-variant-numeric: tabular-nums; }
   .pairs, .lifecycle { grid-template-columns: 1fr 1fr; }
   .kpi .num { font-size: 1.25rem; }
 }
+@media (pointer: coarse) {
+  .chip, .btn { min-height: 44px; }
+  .link { padding: 10px 0; }
+}
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
