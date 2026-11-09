@@ -1,0 +1,401 @@
+{
+  "scans": {
+    "total": 307,
+    "valid": 304,
+    "duplicate": 2,
+    "last_scan_at": "2026-11-05T16:01:00Z",
+    "invalid_label": 1
+  },
+  "engine": {
+    "excel_rows": 3332,
+    "selftest_at": "2026-11-09T15:42:36Z",
+    "excel_sheets": 37,
+    "tables_public": 28,
+    "policies_public": 100,
+    "selftest_passed": 62,
+    "selftest_probes": 62,
+    "source_sha256_12": "da4a5b04e7b1",
+    "tables_public_rls": 28
+  },
+  "orders": [
+    {
+      "code": "P26101",
+      "status": "LISTO PARA EMBARQUE",
+      "promised_on": "2026-11-05",
+      "valid_scans": 187,
+      "active_parts": 43,
+      "packed_parts": 43,
+      "progress_pct": "100.0",
+      "material_cost_mxn": "5202.62",
+      "packages_complete": 12,
+      "packages_delivered": 12,
+      "packages_applicable": 12
+    },
+    {
+      "code": "P26102",
+      "status": "EN PRODUCCION",
+      "promised_on": "2026-11-05",
+      "valid_scans": 99,
+      "active_parts": 26,
+      "packed_parts": 17,
+      "progress_pct": "65.4",
+      "material_cost_mxn": "11831.78",
+      "packages_complete": 3,
+      "packages_delivered": 4,
+      "packages_applicable": 6
+    },
+    {
+      "code": "P26103",
+      "status": "EN PRODUCCION",
+      "promised_on": "2026-11-10",
+      "valid_scans": 18,
+      "active_parts": 12,
+      "packed_parts": 0,
+      "progress_pct": "0.0",
+      "material_cost_mxn": "1368.35",
+      "packages_complete": 0,
+      "packages_delivered": 0,
+      "packages_applicable": 4
+    },
+    {
+      "code": "P26104",
+      "status": "PENDIENTE",
+      "promised_on": "2026-11-12",
+      "valid_scans": 0,
+      "active_parts": 3,
+      "packed_parts": 0,
+      "progress_pct": "0.0",
+      "material_cost_mxn": "1765.56",
+      "packages_complete": 0,
+      "packages_delivered": 0,
+      "packages_applicable": 2
+    }
+  ],
+  "quotes": {
+    "by_status": [
+      {
+        "n": 1,
+        "status": "BORRADOR",
+        "total_mxn": "4071.60"
+      },
+      {
+        "n": 3,
+        "status": "ENVIADA",
+        "total_mxn": "279111.09"
+      },
+      {
+        "n": 4,
+        "status": "APROBADA",
+        "total_mxn": "58500.75"
+      },
+      {
+        "n": 1,
+        "status": "RECHAZADA",
+        "total_mxn": "31412.06"
+      }
+    ],
+    "lifecycle": [
+      {
+        "n": 4,
+        "status": "COTIZADO"
+      },
+      {
+        "n": 1,
+        "status": "LIBERADO"
+      },
+      {
+        "n": 2,
+        "status": "ACTIVADO"
+      },
+      {
+        "n": 0,
+        "status": "FINIQUITADO"
+      },
+      {
+        "n": 0,
+        "status": "TERMINADO"
+      },
+      {
+        "n": 1,
+        "status": "ENTREGADO"
+      },
+      {
+        "n": 1,
+        "status": "ELIMINADO"
+      }
+    ],
+    "approved_cost_mxn": "34373.36",
+    "approved_amount_mxn": "50431.68",
+    "approved_margin_pct": "31.8"
+  },
+  "totals": {
+    "orders": 4,
+    "active_parts": 84,
+    "packed_parts": 60,
+    "progress_pct": "71.4",
+    "parts_cost_mxn": "20168.31"
+  },
+  "catalog": {
+    "doors": 5,
+    "items": 16,
+    "sizes": 1986,
+    "families": 50,
+    "finishes": 32,
+    "hardware": 87,
+    "materials": 17,
+    "items_published": 11
+  },
+  "packages": {
+    "complete": 15,
+    "deliveries": 17,
+    "incomplete": 9,
+    "not_applicable": 2,
+    "delivered_packages": 16
+  },
+  "stations": [
+    {
+      "seq": 1,
+      "code": "CORTE",
+      "tasks": {
+        "done": 3,
+        "pending": 1,
+        "no_aplica": 0,
+        "in_progress": 0,
+        "waiting_handoff": 0
+      },
+      "rejects": 0,
+      "wip_parts": 7,
+      "valid_scans": 82
+    },
+    {
+      "seq": 2,
+      "code": "CHAPEO",
+      "tasks": {
+        "done": 2,
+        "pending": 1,
+        "no_aplica": 0,
+        "in_progress": 1,
+        "waiting_handoff": 0
+      },
+      "rejects": 0,
+      "wip_parts": 8,
+      "valid_scans": 66
+    },
+    {
+      "seq": 3,
+      "code": "TALADRO",
+      "tasks": {
+        "done": 2,
+        "pending": 1,
+        "no_aplica": 1,
+        "in_progress": 0,
+        "waiting_handoff": 0
+      },
+      "rejects": 0,
+      "wip_parts": 4,
+      "valid_scans": 33
+    },
+    {
+      "seq": 4,
+      "code": "PUERTAS",
+      "tasks": {
+        "done": 1,
+        "pending": 2,
+        "no_aplica": 0,
+        "in_progress": 1,
+        "waiting_handoff": 0
+      },
+      "rejects": 1,
+      "wip_parts": 1,
+      "valid_scans": 15
+    },
+    {
+      "seq": 5,
+      "code": "ARMADO",
+      "tasks": {
+        "done": 1,
+        "pending": 0,
+        "no_aplica": 1,
+        "in_progress": 2,
+        "waiting_handoff": 0
+      },
+      "rejects": 0,
+      "wip_parts": 1,
+      "valid_scans": 48
+    },
+    {
+      "seq": 6,
+      "code": "EMPAQUE",
+      "tasks": {
+        "done": 1,
+        "pending": 2,
+        "no_aplica": 0,
+        "in_progress": 1,
+        "waiting_handoff": 0
+      },
+      "rejects": 0,
+      "wip_parts": 0,
+      "valid_scans": 60
+    }
+  ],
+  "inventory": {
+    "items": [
+      {
+        "code": "HDF-3",
+        "kind": "TABLERO",
+        "unit": "HOJA",
+        "stock": "1.00",
+        "value_mxn": "310.00",
+        "reorder_point": "2.00",
+        "at_or_below_reorder": true
+      },
+      {
+        "code": "MDF-18",
+        "kind": "TABLERO",
+        "unit": "HOJA",
+        "stock": "1.00",
+        "value_mxn": "1150.00",
+        "reorder_point": "2.00",
+        "at_or_below_reorder": true
+      },
+      {
+        "code": "MEL-BL-16",
+        "kind": "TABLERO",
+        "unit": "HOJA",
+        "stock": "5.00",
+        "value_mxn": "4900.00",
+        "reorder_point": "4.00",
+        "at_or_below_reorder": false
+      },
+      {
+        "code": "MEL-GR-16",
+        "kind": "TABLERO",
+        "unit": "HOJA",
+        "stock": "4.00",
+        "value_mxn": "5360.00",
+        "reorder_point": "3.00",
+        "at_or_below_reorder": false
+      },
+      {
+        "code": "MEL-NOG-16",
+        "kind": "TABLERO",
+        "unit": "HOJA",
+        "stock": "3.00",
+        "value_mxn": "3870.00",
+        "reorder_point": "2.00",
+        "at_or_below_reorder": false
+      },
+      {
+        "code": "CANTO-BL-19",
+        "kind": "CANTO",
+        "unit": "M",
+        "stock": "80.00",
+        "value_mxn": "440.00",
+        "reorder_point": "50.00",
+        "at_or_below_reorder": false
+      },
+      {
+        "code": "CANTO-GR-19",
+        "kind": "CANTO",
+        "unit": "M",
+        "stock": "120.00",
+        "value_mxn": "840.00",
+        "reorder_point": "50.00",
+        "at_or_below_reorder": false
+      },
+      {
+        "code": "CANTO-NOG-19",
+        "kind": "CANTO",
+        "unit": "M",
+        "stock": "40.00",
+        "value_mxn": "288.00",
+        "reorder_point": "50.00",
+        "at_or_below_reorder": true
+      }
+    ],
+    "total_value_mxn": "17158.00"
+  },
+  "data_quality": [
+    {
+      "check": "familias del cat├ílogo publicado sin c├│digo",
+      "found": 5
+    },
+    {
+      "check": "c├│digos de familia repetidos en el cat├ílogo publicado",
+      "found": 2
+    },
+    {
+      "check": "medidas cuya familia no est├í en el cat├ílogo de familias",
+      "found": 0
+    },
+    {
+      "check": "SKU marcados como publicados cuya plantilla no est├í en el cat├ílogo",
+      "found": 0
+    },
+    {
+      "check": "SKU propios (fuera del cat├ílogo publicado)",
+      "found": 5
+    },
+    {
+      "check": "escaneos con etiqueta inexistente",
+      "found": 1
+    },
+    {
+      "check": "escaneos duplicados dentro de la ventana",
+      "found": 2
+    },
+    {
+      "check": "entregas de bulto inexistente",
+      "found": 0
+    }
+  ],
+  "generated_at": "2026-11-09T15:42:36.547Z",
+  "parts_by_status": [
+    {
+      "n": 3,
+      "status": "SIN INICIAR"
+    },
+    {
+      "n": 7,
+      "status": "EN CORTE"
+    },
+    {
+      "n": 8,
+      "status": "EN CHAPEO"
+    },
+    {
+      "n": 4,
+      "status": "EN TALADRO"
+    },
+    {
+      "n": 1,
+      "status": "EN PUERTAS"
+    },
+    {
+      "n": 1,
+      "status": "EN ARMADO"
+    },
+    {
+      "n": 60,
+      "status": "EMPACADA"
+    }
+  ],
+  "orders_by_status": [
+    {
+      "n": 1,
+      "status": "PENDIENTE"
+    },
+    {
+      "n": 2,
+      "status": "EN PRODUCCION"
+    },
+    {
+      "n": 1,
+      "status": "LISTO PARA EMBARQUE"
+    },
+    {
+      "n": 0,
+      "status": "SIN PIEZAS"
+    }
+  ]
+}
